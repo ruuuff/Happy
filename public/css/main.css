@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  
+  box-sizing: border-box;
 }
 
 :root {
@@ -13,6 +15,8 @@ body {
   height: 100vh;
   
   color: white;
+  
+  background: #ebf2f5;
 }
 
 body, input, button, textarea {

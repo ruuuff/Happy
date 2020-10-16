@@ -6,4 +6,4 @@
 - CSS
 - JavaScript
 - Leaflet | Biblioteca JavaScript para mapas interativos.
-
+- Font Awesome | Icones

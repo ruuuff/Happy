@@ -1,0 +1,133 @@
+form {
+  width: 70rem;
+  
+  margin: 6.4rem auto;
+  padding: 8rem;
+  border-radius: 2rem;
+  border: .1rem solid #d3e2e5;
+  
+  background: white;
+  
+  overflow: hidden;
+}
+
+
+fieldset {
+  border: 0;
+}
+
+/* '+' pega o elemento que seja seguido por outro (segundo seletor) */
+fieldset + fieldset {
+  margin-top: 8rem;
+}
+
+fieldset legend {
+  width: 100%;
+  
+  font: 700 3.2rem/1.5 'Nunito', sans-serif;
+  color: #5c8599;
+  
+  margin-bottom: 4rem;
+  padding-bottom: 2.4rem; 
+  border-bottom: 1px solid #d3e2e5;
+}
+
+/* '+' pega o elemento que seja seguido por outro (segundo seletor). Todos que tenham antes um .input-block */
+.input-block + .input-block {
+  margin-top: 2.4rem;
+}
+
+.input-block label {
+  color: #8fa7b3;
+  line-height: 1.5;
+  
+  margin-bottom: .8rem;
+}
+
+.input-block label span {
+  font-size: 1.5rem;
+  color: #8fa7b3;
+  line-height: 1.5;
+  
+  margin-left: 2.4rem;
+}
+
+.input-block input,
+.input-block textarea {
+  width: 100%;
+  
+  background: #f5f8fa;
+  color: #5c8599;
+  
+  border: .1rem solid #d3e2e5;
+  border-radius: 2rem;
+}
+
+/* quando a opção estivar selecionada, ele aparecerá com uma borda (tipo hover)*/
+.input-block input:focus,
+.input-block textarea:focus {
+  border: 1px solid #000;
+}
+
+.input-block input {
+  height: 6.4rem;
+  padding: 0 1.6rem;
+}
+
+.input-block input:valid,
+.input-block textarea:valid {
+  border: .1rem solid #a1e9c5;
+}
+
+.input-block textarea {
+  /* tamanho mínimo, ideal e máximo */
+  height: clamp(12rem, 16rem, 24rem);
+  
+  /* só permite que o text área faça um redimensionamento na vertical (utilizando a pontinha dele que fica na direita inferior) */
+  resize: vertical;
+  
+  padding: 1.6rem;
+  
+  line-height: 2.8rem;
+}
+
+.input-block.images button {
+  width: 100%;
+  height: 6.4rem;
+  
+  background: #f5f8fa;
+  
+  border-radius: 2rem;
+  border: 1px dashed #96d2f0;
+  padding: 0 1.6rem;
+  margin-top: 2.4rem;
+  
+  cursor: pointer;
+}
+
+.new-upload {
+  position: relative;
+}
+
+.new-upload + .new-upload {
+  margin-top: 2.4rem;
+}
+
+.new-upload span {
+  position: absolute;
+  right: 12px;
+  bottom: 11px;
+  
+  background: #fff;
+  border-radius: 1rem;
+  border: 1px solid #d3d2e5;
+  
+  width: 4.4rem;
+  height: 4.4rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  cursor: pointer;
+}
